@@ -1,0 +1,167 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://data.cityofchicago.org/resource/7ia9-ayc2.json?$where=alderman%20LIKE%20%27%25Burke%25%27
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      X-App-Token:
+      - ctUkzOunpr8Xa9hmlg3BS8rS8
+      User-Agent:
+      - soda-ruby/0.2.25 (Darwin/17.5.0; Ruby/2.5.1-p57)
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 29 May 2018 17:32:38 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Socrata-Requestid:
+      - 4rmxsfgzoyhqxnj3rmosz3b4i
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"YWxwaGEuMTA4MTBfNl8zMDhfdUJPV0JwWmc3cWpmNGJBTFhvN0VsODk2RXMWNudkFhO9C_a_Idx7DsGNdYos5Q-gzip--gzip"'
+      X-Soda2-Fields:
+      - '["address","alderman","city","city_hall_address","city_hall_city","city_hall_phone","city_hall_phone_type","city_hall_state","city_hall_zipcode","email","location","location_address","location_city","location_state","location_zip","state","ward","ward_fax","ward_fax_type","ward_phone","ward_phone_type","website","website_description","zipcode"]'
+      X-Soda2-Types:
+      - '["text","text","text","text","text","text","text","text","number","text","point","text","text","text","text","text","number","text","text","text","text","text","text","text"]'
+      X-Soda2-Data-Out-Of-Date:
+      - 'false'
+      X-Soda2-Truth-Last-Modified:
+      - Thu, 28 Jan 2016 02:13:42 GMT
+      X-Soda2-Secondary-Last-Modified:
+      - Thu, 28 Jan 2016 02:13:42 GMT
+      Last-Modified:
+      - Thu, 28 Jan 2016 02:13:42 GMT
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '148445'
+      X-Socrata-Region:
+      - aws-us-east-1-fedramp-prod
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"address":"2650 West 51st Street","alderman":"Edward M. Burke","city":"Chicago","city_hall_address":"121
+        North LaSalle Street, Room 302","city_hall_city":"Chicago","city_hall_phone":"(312)
+        744-3380","city_hall_state":"IL","city_hall_zipcode":"60602","email":"eburke@cityofchicago.org","location":{"type":"Point","coordinates":[-87.6911632994,41.8011472828]},"state":"IL","ward":"14","ward_fax":"(773)
+        471-1648","ward_phone":"(773) 471-1414","website":"http://www.committeeonfinance.org/","zipcode":"60632"}]
+
+'
+    http_version: 
+  recorded_at: Tue, 29 May 2018 17:32:38 GMT
+- request:
+    method: get
+    uri: https://data.cityofchicago.org/resource/cdmx-wzbz.json?$where=ward%20=%2014%20and%20creation_date%20%3E=%20%272018-05-01T00:00:00%27%20and%20creation_date%20%3C=%20%272018-05-31T00:00:00%27%20and%20what_type_of_surface_is_the_graffiti_on_%20=%20%27Brick%20-%20Unpainted%27%20and%20where_is_the_graffiti_located_%20=%20%27Side%27
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      X-App-Token:
+      - ctUkzOunpr8Xa9hmlg3BS8rS8
+      User-Agent:
+      - soda-ruby/0.2.25 (Darwin/17.5.0; Ruby/2.5.1-p57)
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 29 May 2018 17:32:39 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Socrata-Requestid:
+      - 6udo26aqq4o3xxhp43oxgzsya
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"YWxwaGEuMTAyODlfOF8xMzAzejROVzh2MUZTMjZjamNBZjdneDA5UHk2dllNVqksXFnJ1jspPLA9H_2WPymOLx0-gzip--gzip"'
+      X-Soda2-Fields:
+      - '["community_area","completion_date","creation_date","latitude","location","location_address","location_city","location_state","location_zip","longitude","police_district","service_request_number","ssa","status","street_address","type_of_service_request","ward","what_type_of_surface_is_the_graffiti_on_","where_is_the_graffiti_located_","x_coordinate","y_coordinate","zip_code"]'
+      X-Soda2-Types:
+      - '["number","floating_timestamp","floating_timestamp","number","point","text","text","text","text","number","number","text","text","text","text","text","number","text","text","number","number","number"]'
+      X-Soda2-Data-Out-Of-Date:
+      - 'false'
+      X-Soda2-Truth-Last-Modified:
+      - Tue, 29 May 2018 08:19:06 GMT
+      X-Soda2-Secondary-Last-Modified:
+      - Tue, 29 May 2018 08:19:07 GMT
+      Last-Modified:
+      - Tue, 29 May 2018 08:19:07 GMT
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '2384'
+      X-Socrata-Region:
+      - aws-us-east-1-fedramp-prod
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        [{"community_area":"63","completion_date":"2018-05-01T00:00:00.000","creation_date":"2018-05-01T00:00:00.000","latitude":"41.79178653965037","location":{"type":"Point","coordinates":[-87.703654227875,41.79178653965]},"longitude":"-87.70365422787454","police_district":"8","service_request_number":"18-01378115","status":"Completed","street_address":"5558 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155995.3714958","y_coordinate":"1867588.49839798","zip_code":"60629"}
+        ,{"community_area":"63","completion_date":"2018-05-01T00:00:00.000","creation_date":"2018-05-01T00:00:00.000","latitude":"41.78639483325354","location":{"type":"Point","coordinates":[-87.700975972602,41.786394833254]},"longitude":"-87.70097597260194","police_district":"8","service_request_number":"18-01378102","ssa":"59","status":"Completed","street_address":"3100 W 59TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1156724.7057037","y_coordinate":"1865347.62078727","zip_code":"60629"}
+        ,{"community_area":"57","completion_date":"2018-05-02T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.80758568356621","location":{"type":"Point","coordinates":[-87.737370697539,41.807585683566]},"longitude":"-87.73737069753872","police_district":"8","service_request_number":"18-01386443","status":"Completed","street_address":"4539 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1146777.31288405","y_coordinate":"1873079.04770405","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-02T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.80646042607994","location":{"type":"Point","coordinates":[-87.704074812339,41.80646042608]},"longitude":"-87.7040748123394","police_district":"8","service_request_number":"18-01388142","ssa":"39","status":"Completed","street_address":"4756 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155845.67572285","y_coordinate":"1872776.58988175","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-02T00:00:00.000","creation_date":"2018-05-01T00:00:00.000","latitude":"41.809398505842836","location":{"type":"Point","coordinates":[-87.703878956732,41.809398505843]},"longitude":"-87.703878956732","police_district":"9","service_request_number":"18-01377233","ssa":"39","status":"Completed","street_address":"4617 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155810.84227797","y_coordinate":"1873846.27272503","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-02T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.80696133618424","location":{"type":"Point","coordinates":[-87.70747914434,41.806961336184]},"longitude":"-87.70747914433994","police_district":"8","service_request_number":"18-01388108","ssa":"39","status":"Completed","street_address":"4737 S CHRISTIANA AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1154838.56718937","y_coordinate":"1872885.07772167","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-03T00:00:00.000","latitude":"41.79373859261787","location":{"type":"Point","coordinates":[-87.706158202148,41.793738592618]},"longitude":"-87.70615820214802","police_district":"8","service_request_number":"18-01397549","status":"Completed - Dup","street_address":"5452 S SPAULDING AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155307.45642797","y_coordinate":"1868274.3255037","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.79358772840839","location":{"type":"Point","coordinates":[-87.706068305095,41.793587728408]},"longitude":"-87.70606830509527","police_district":"8","service_request_number":"18-01391190","status":"Completed","street_address":"3300 W 55TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155316.55642797","y_coordinate":"1867958.3255037","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.80805426764556","location":{"type":"Point","coordinates":[-87.70382554115,41.808054267646]},"longitude":"-87.70382554114951","police_district":"9","service_request_number":"18-01392701","ssa":"39","status":"Completed","street_address":"4701 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155831.2957733","y_coordinate":"1873285.37702919","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.80818630754135","location":{"type":"Point","coordinates":[-87.707433690546,41.808186307541]},"longitude":"-87.7074336905461","police_district":"8","service_request_number":"18-01392780","status":"Completed","street_address":"3322 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1154904.53999863","y_coordinate":"1873275.38923143","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.79373859261787","location":{"type":"Point","coordinates":[-87.706158202148,41.793738592618]},"longitude":"-87.70615820214802","police_district":"8","service_request_number":"18-01394767","status":"Completed","street_address":"5452 S SPAULDING AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155307.45642797","y_coordinate":"1868274.3255037","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-03T00:00:00.000","latitude":"41.80408512037835","location":{"type":"Point","coordinates":[-87.720317528802,41.804085120378]},"longitude":"-87.72031752880197","police_district":"8","service_request_number":"18-01399516","ssa":"39","status":"Completed","street_address":"4901 S ARCHER AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1151394.93498777","y_coordinate":"1871854.38002643","zip_code":"60632"}
+        ,{"community_area":"56","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-03T00:00:00.000","latitude":"41.807529083145695","location":{"type":"Point","coordinates":[-87.741871213523,41.807529083146]},"longitude":"-87.74187121352261","police_district":"8","service_request_number":"18-01399686","status":"Completed","street_address":"4725 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1145548.14666617","y_coordinate":"1873050.00881189","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-03T00:00:00.000","creation_date":"2018-05-02T00:00:00.000","latitude":"41.800721300516216","location":{"type":"Point","coordinates":[-87.703073080683,41.800721300516]},"longitude":"-87.70307308068261","police_district":"9","service_request_number":"18-01393769","status":"Completed","street_address":"3143 W 51ST ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1156181.89011025","y_coordinate":"1870646.27510548","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-04T00:00:00.000","creation_date":"2018-05-03T00:00:00.000","latitude":"41.80809172941324","location":{"type":"Point","coordinates":[-87.714843492787,41.808091729413]},"longitude":"-87.71484349278742","police_district":"8","service_request_number":"18-01404981","ssa":"39","status":"Completed","street_address":"3630 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1152878.29798668","y_coordinate":"1873225.74552151","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-07T00:00:00.000","creation_date":"2018-05-07T00:00:00.000","latitude":"41.793356081777695","location":{"type":"Point","coordinates":[-87.706890735464,41.793356081778]},"longitude":"-87.70689073546389","police_district":"8","service_request_number":"18-01432694","status":"Completed","street_address":"3319 W 55TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155111.59998238","y_coordinate":"1867952.84408111","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-07T00:00:00.000","creation_date":"2018-05-07T00:00:00.000","latitude":"41.813973948334066","location":{"type":"Point","coordinates":[-87.704667071455,41.813973948334]},"longitude":"-87.70466707145486","police_district":"8","service_request_number":"18-01432737","ssa":"39","status":"Completed","street_address":"4374 S ARCHER AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155677.59571826","y_coordinate":"1875419.943918","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-07T00:00:00.000","creation_date":"2018-05-07T00:00:00.000","latitude":"41.78983385422257","location":{"type":"Point","coordinates":[-87.700866078815,41.789833854223]},"longitude":"-87.70086607881491","police_district":"8","service_request_number":"18-01432690","status":"Completed","street_address":"5701 S ALBANY AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1156686.99558452","y_coordinate":"1866665.88338966","zip_code":"60629"}
+        ,{"community_area":"58","completion_date":"2018-05-08T00:00:00.000","creation_date":"2018-05-07T00:00:00.000","latitude":"41.80823345017686","location":{"type":"Point","coordinates":[-87.703675126427,41.808233450177]},"longitude":"-87.70367512642676","police_district":"9","service_request_number":"18-01436727","ssa":"39","status":"Completed","street_address":"3152 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1156058.19989998","y_coordinate":"1873304.23377565","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-08T00:00:00.000","creation_date":"2018-05-08T00:00:00.000","latitude":"41.799971221430745","location":{"type":"Point","coordinates":[-87.735369660567,41.799971221431]},"longitude":"-87.73536966056707","police_district":"8","service_request_number":"18-01448123","status":"Completed","street_address":"5218 S ARCHER AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1147290.53998234","y_coordinate":"1870225.45982066","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-09T00:00:00.000","creation_date":"2018-05-09T00:00:00.000","latitude":"41.80122490074073","location":{"type":"Point","coordinates":[-87.686623700446,41.801224900741]},"longitude":"-87.68662370044589","police_district":"9","service_request_number":"18-01458506","status":"Completed","street_address":"2458 W 51ST ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1160767.56231478","y_coordinate":"1870785.60438829","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-09T00:00:00.000","creation_date":"2018-05-09T00:00:00.000","latitude":"41.812374710326516","location":{"type":"Point","coordinates":[-87.723608403774,41.812374710327]},"longitude":"-87.72360840377355","police_district":"8","service_request_number":"18-01458537","status":"Completed","street_address":"4433 S PULASKI RD","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1150422.48811295","y_coordinate":"1874948.64210879","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-09T00:00:00.000","creation_date":"2018-05-08T00:00:00.000","latitude":"41.807603067723505","location":{"type":"Point","coordinates":[-87.735878073128,41.807603067724]},"longitude":"-87.73587807312835","police_district":"8","service_request_number":"18-01451582","status":"Completed","street_address":"4501 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1147139.36989922","y_coordinate":"1873087.31368382","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-10T00:00:00.000","creation_date":"2018-05-09T00:00:00.000","latitude":"41.79676644539674","location":{"type":"Point","coordinates":[-87.703795414978,41.796766445397]},"longitude":"-87.70379541497842","police_district":"8","service_request_number":"18-01464859","status":"Completed","street_address":"5312 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155949.81746626","y_coordinate":"1869178.03647375","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-14T00:00:00.000","creation_date":"2018-05-14T00:00:00.000","latitude":"41.800358082137066","location":{"type":"Point","coordinates":[-87.736709154438,41.800358082137]},"longitude":"-87.73670915443839","police_district":"8","service_request_number":"18-01506684","status":"Completed","street_address":"5101 S KOLMAR AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1146886.46098253","y_coordinate":"1870409.12268354","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-14T00:00:00.000","creation_date":"2018-05-09T00:00:00.000","latitude":"41.80162188918921","location":{"type":"Point","coordinates":[-87.723550287553,41.801621889189]},"longitude":"-87.72355028755314","police_district":"8","service_request_number":"18-01459580","ssa":"39","status":"Completed","street_address":"5022 S PULASKI RD","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1150547.61161964","y_coordinate":"1871001.42237961","zip_code":"60632"}
+        ,{"community_area":"58","completion_date":"2018-05-14T00:00:00.000","creation_date":"2018-05-14T00:00:00.000","latitude":"41.81361225082424","location":{"type":"Point","coordinates":[-87.711499246487,41.813612250824]},"longitude":"-87.71149924648708","police_district":"8","service_request_number":"18-01506719","status":"Completed","street_address":"4358 S ST LOUIS AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1153796.61787677","y_coordinate":"1875528.25710352","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-16T00:00:00.000","creation_date":"2018-05-16T00:00:00.000","latitude":"41.80004644719593","location":{"type":"Point","coordinates":[-87.703891531973,41.800046447196]},"longitude":"-87.70389153197276","police_district":"8","service_request_number":"18-01528800","status":"Completed","street_address":"5124 S KEDZIE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155912.05941657","y_coordinate":"1870476.78219362","zip_code":"60632"}
+        ,{"community_area":"56","completion_date":"2018-05-16T00:00:00.000","creation_date":"2018-05-14T00:00:00.000","latitude":"41.80434869414363","location":{"type":"Point","coordinates":[-87.742925841836,41.804348694144]},"longitude":"-87.74292584183607","police_district":"8","service_request_number":"18-01506671","status":"Completed","street_address":"4849 S CICERO AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1145176.66807132","y_coordinate":"1872050.02552972","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-17T00:00:00.000","creation_date":"2018-05-16T00:00:00.000","latitude":"41.807802554111674","location":{"type":"Point","coordinates":[-87.720289538592,41.807802554112]},"longitude":"-87.7202895385925","police_district":"8","service_request_number":"18-01529993","status":"Completed","street_address":"3841 W 47TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1151447.83619108","y_coordinate":"1873191.20906957","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-18T00:00:00.000","creation_date":"2018-05-18T00:00:00.000","latitude":"41.80077212613476","location":{"type":"Point","coordinates":[-87.730142647446,41.800772126135]},"longitude":"-87.73014264744553","police_district":"8","service_request_number":"18-01550254","status":"Completed","street_address":"5118 S ARCHER AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1148890.15749993","y_coordinate":"1870565.22331599","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-21T00:00:00.000","creation_date":"2018-05-20T00:00:00.000","latitude":"41.809585714172286","location":{"type":"Point","coordinates":[-87.724169636504,41.809585714172]},"longitude":"-87.72416963650352","police_district":"8","service_request_number":"18-01570256","ssa":"39","status":"Completed","street_address":"4011 W 46TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1150351.34852689","y_coordinate":"1873832.82861563","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-21T00:00:00.000","creation_date":"2018-05-20T00:00:00.000","latitude":"41.79358917945885","location":{"type":"Point","coordinates":[-87.705945783458,41.793589179459]},"longitude":"-87.70594578345793","police_district":"8","service_request_number":"18-01570860","status":"Completed","street_address":"3260 W 55TH ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1155510.78069724","y_coordinate":"1867963.294269","zip_code":"60632"}
+        ,{"community_area":"63","completion_date":"2018-05-22T00:00:00.000","creation_date":"2018-05-22T00:00:00.000","latitude":"41.800721300516216","location":{"type":"Point","coordinates":[-87.703073080683,41.800721300516]},"longitude":"-87.70307308068261","police_district":"9","service_request_number":"18-01587647","status":"Completed","street_address":"3143 W 51ST ST","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1156181.89011025","y_coordinate":"1870646.27510548","zip_code":"60632"}
+        ,{"community_area":"62","completion_date":"2018-05-23T00:00:00.000","creation_date":"2018-05-23T00:00:00.000","latitude":"41.80258627754837","location":{"type":"Point","coordinates":[-87.716208268269,41.802586277548]},"longitude":"-87.71620826826924","police_district":"8","service_request_number":"18-01600325","status":"Completed","street_address":"4956 S LAWNDALE AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1152547.08451153","y_coordinate":"1871400.37832551","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-24T00:00:00.000","creation_date":"2018-05-23T00:00:00.000","latitude":"41.80661502890835","location":{"type":"Point","coordinates":[-87.725850099471,41.806615028908]},"longitude":"-87.72585009947137","police_district":"8","service_request_number":"18-01599617","status":"Completed","street_address":"4741 S KARLOV AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1149826.22072926","y_coordinate":"1872876.22899091","zip_code":"60632"}
+        ,{"community_area":"57","completion_date":"2018-05-25T00:00:00.000","creation_date":"2018-05-24T00:00:00.000","latitude":"41.80801300518807","location":{"type":"Point","coordinates":[-87.714379623416,41.808013005188]},"longitude":"-87.71437962341568","police_district":"8","service_request_number":"18-01616667","ssa":"39","status":"Completed","street_address":"4710 S ARCHER AVE","type_of_service_request":"Graffiti Removal","ward":"14","what_type_of_surface_is_the_graffiti_on_":"Brick - Unpainted","where_is_the_graffiti_located_":"Side","x_coordinate":"1152978.59798668","y_coordinate":"1873173.24552151","zip_code":"60632"}]
+    http_version: 
+  recorded_at: Tue, 29 May 2018 17:32:39 GMT
+recorded_with: VCR 4.0.0
