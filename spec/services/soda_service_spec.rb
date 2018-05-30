@@ -66,5 +66,61 @@ describe SodaService do
         end
       end
     end
+
+    context 'given two months to compare' do
+      it "returns two field sets" do
+        VCR.use_cassette 'name_year_two_months' do
+          expected = [
+            {
+              "alderman_name": "Edward M. Burke",
+              "ward": "14",
+              "report_month_beginning": "2018-04-01T00:00:00",
+              "number_of_requests": 428
+            },
+            {
+              "alderman_name": "Edward M. Burke",
+              "ward": "14",
+              "report_month_beginning": "2018-05-01T00:00:00",
+              "number_of_requests": 406
+            }
+          ]
+
+          expect(
+            service.get(
+              last_name: "Burke",
+              month: "4,5",
+              year: "2018",
+            )).to eq(expected)
+        end
+      end
+    end
+
+    context 'given two last names(wards) to compare' do
+      it "returns two field sets" do
+        VCR.use_cassette 'two_names_year_month' do
+          expected = [
+            {
+              "alderman_name": "Michelle A. Harris",
+              "ward": "8",
+              "report_month_beginning": "2018-05-01T00:00:00",
+              "number_of_requests": 3
+            },
+            {
+              "alderman_name": "Edward M. Burke",
+              "ward": "14",
+              "report_month_beginning": "2018-05-01T00:00:00",
+              "number_of_requests": 406
+            }
+          ]
+
+          expect(
+            service.get(
+              last_name: "Burke,Harris",
+              month: "5",
+              year: "2018",
+            )).to eq(expected)
+        end
+      end
+    end
   end
 end
